@@ -1,0 +1,163 @@
+/* *{
+    margin: 2;
+    padding: 2;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bolder ;
+    letter-spacing: .5 rem;
+}
+
+
+main{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+
+  ;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow-wrap: break-word;
+    transform: translate(-50%, -50%);
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+div {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  overflow-wrap: break-word;
+  transform: translate(-50%, -50%);
+background-color: rgba(255, 255, 255, 0.3);
+} */
+
+html { 
+  background: url(https://source.unsplash.com/random/1920x1080) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	background-color: transparent;
+}
+
+#container {
+	width: 50%;
+	/*height: 300px;*/
+	background-color: rgba(228, 228, 228, 0.53);
+	margin: 0 auto;
+/*centering the quote horizontally and vertically*/
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	  
+}
+
+header {
+	
+	/*background-color: gainsboro;*/
+	text-align: center;
+}
+
+h1, h3 {
+	font-family: 'Special Elite', cursive;
+	width: 80%;
+	/*height: 300px;*/
+	background-color: rgba(228, 228, 228, 0.53);
+	margin: 0 auto;
+/*centering the quote horizontally and vertically*/
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+h4 {
+	font-family: 'Special Elite', cursive;
+	width: 50%;
+	/*height: 300px;*/
+	background-color: rgba(228, 228, 228, 0.53);
+	margin: 0 auto;
+/*centering the quote horizontally and vertically*/
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+header h1 {
+	font-weight: 100;
+    color: rgba(252, 139, 128, 0.75);
+	margin-bottom: 0;
+}
+
+header h3 {
+	color: #9E9E9E;
+    font-size: 1em;
+	font-family: 'Merriweather', 'Georgia', serif;
+	font-weight: 100;
+	margin: 0 0 50px 0;
+
+}
+blockquote {
+	border: none;
+}
+blockquote p {
+	padding: 25px;
+text-align: center;
+font-size: 1.8em;
+font-family: 'Special Elite', cursive;
+}
+blockquote cite {
+	display: block;
+    text-align: right;
+	font-size: 1.3em;
+	font-family: 'Merriweather', 'Georgia', serif;
+	margin-bottom: 20px;
+	color: #fc8b80;
+}
+.buttons {
+	background: gainsboro;
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px 0;
+	
+	/*make buttuns equally distributed*/
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.btn:focus, .btn:active {
+	outline: none !important; 
+	
+}
+.btn-default:hover {
+	
+	background-color: rgba(252, 139, 128, 0.75);
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+#github {
+	color: rgba(96, 125, 139, 0.51);
+}
+
+#github:hover {
+	color: rgba(252, 139, 128, 0.75);
+}
+
+@media (max-width:800px) {
+	#container, .buttons {
+		width: 80%;
+	}
+}

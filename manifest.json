@@ -1,0 +1,21 @@
+{
+  "name": "My Bespoke Chrome Extension",
+  "version": "1",
+  "description": "Quote, Background, and Dataviz rolled into one",
+  "background": {"page": "background.html"},
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html" 
+  },
+  "content_security_policy": "script-src 'self' https://weatherwidget.io; object-src 'self'",
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.0.2.min.js", "script.js", "background.js" ],
+    "css": ["customStyles.css"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
